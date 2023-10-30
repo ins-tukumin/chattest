@@ -14,6 +14,7 @@ import pytz
 global now
 now = datetime.datetime.now(pytz.timezone('Asia/Tokyo'))
 
+
 def init_page():
     st.set_page_config(
         page_title="ChatApp",
@@ -77,7 +78,6 @@ def main():
         default_app = firebase_admin.initialize_app(cred)
     db = firestore.client()
     doc_ref = db.collection(u'chattest').document(str(now))
-
 
     # ユーザーの入力を監視
     if user_input := st.chat_input("聞きたいことを入力してね！"):
