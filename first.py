@@ -14,7 +14,6 @@ st.title("接続テスト")
 def on_input_change():
     with st.spinner("送信中。。。"):
         time.sleep(3)
-    st.write("メッセージの送信が出来ました。接続テストは完了です。")
     Human_Agent = "connect" 
     connect = "ok"
     doc_ref = db.collection(user_number).document(str(now))
