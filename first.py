@@ -24,7 +24,7 @@ def on_input_change():
     st.write("メッセージの送信が出来ました。接続テストは完了です。")
 
 with st.container():
-    st.text_input("参加者番号を入力して送信ボタンを押してください")
+    user_number = st.text_input("参加者番号を入力して送信ボタンを押してください")
     if user_number:
     # 初期済みでない場合は初期化処理を行う
         if not firebase_admin._apps:
