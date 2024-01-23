@@ -9,7 +9,7 @@ def on_input_change():
     st.write("メッセージの送信が出来ました。接続テストは完了です。")
 
 with st.container():
-    st.text_input("なにか入力して送信ボタンを押してください")
+    st.text_input("参加者番号を入力して送信ボタンを押してください")
     st.button("送信", on_click=on_input_change)
 
 hide_streamlit_style = """
