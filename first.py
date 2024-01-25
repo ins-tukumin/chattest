@@ -20,7 +20,7 @@ def on_input_change():
     doc_ref.set({
         Human_Agent: connect,
     })
-    st.write("メッセージの送信が出来ました。接続テストは完了です。")
+    st.write("メッセージの送信が出来ました。接続テストは完了です。アンケートのタブにもどって回答を再開してください。")
 
 with st.container():
     user_number = st.text_input("参加者番号を入力して送信ボタンを押してください")
